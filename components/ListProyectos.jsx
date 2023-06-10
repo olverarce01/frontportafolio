@@ -1,8 +1,8 @@
 import CardProyecto from './CardProyecto.jsx';
-
+import host from '@/host.js';
 
 const fetchProjects = () =>{
-  return fetch('http://localhost:3001/projects', {cache: 'no-store'})
+  return fetch(`${host}/projects`, {cache: 'no-store'})
   .then(res => res.json());
 }
 

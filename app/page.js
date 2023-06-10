@@ -4,11 +4,13 @@ import Label from '../components/Label.jsx';
 import Button from '../components/Button.jsx'
 import LinkSocial from '../components/LinkSocial.jsx';
 import CarouselProyectos from '../components/CarouselProyectos.jsx';
+import host from '@/host.js';
+
 
 export default  async function HomePage() {
 
   const fetchImages = () =>{
-    return fetch('http://localhost:3001/images', {cache: 'no-store'})
+    return fetch(`${host}/images`, {cache: 'no-store'})
     .then(res => res.json());
   }
   

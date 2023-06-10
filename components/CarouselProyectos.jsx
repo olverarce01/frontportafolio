@@ -5,7 +5,7 @@ import { Carousel, Modal, Button } from 'react-bootstrap';
 import styles from './CarouselProyectos.module.css';
 import { useState } from 'react';
 import { FaThumbsUp} from 'react-icons/fa';
-
+import host from '@/host';
 
 export default function CarouselProyectos({images}) { 
 
@@ -18,11 +18,11 @@ export default function CarouselProyectos({images}) {
 
 
   const fetchLikes = (id) => {
-    return fetch(`http://localhost:3001/images/${id}`, {cache: 'no-store'})
+    return fetch(`${host}/images/${id}`, {cache: 'no-store'})
     .then(res=>res.json());
   }
   const fetchStatusLikeImage = (id) => {
-    return fetch(`http://localhost:3001/images/${id}/like`, {cache: 'no-store'})
+    return fetch(`${host}/images/${id}/like`, {cache: 'no-store'})
     .then(res=>res.json());
   }
 
@@ -40,7 +40,7 @@ export default function CarouselProyectos({images}) {
   };
   const handleLike = async() => {
     setIsLiked(!isLiked);
-    await fetch(`http://localhost:3001/images/${idImage}/like`, {
+    await fetch(`${host}/images/${idImage}/like`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -55,7 +55,7 @@ export default function CarouselProyectos({images}) {
     <Carousel className='w-100 m-4'>
       
         {images.map((image)=>{
-          return <Carousel.Item key={image.id}><img
+          return <Carousel.Item key={image._id}><img
           className="d-block"
           src={image.src}
           alt={image.alt}

@@ -1,8 +1,8 @@
 import Label from "./Label";
-
+import host from "@/host";
 
 const fetchProject = (id) =>{
-  return fetch(`http://localhost:3001/projects/${id}`, {cache: 'no-store'})
+  return fetch(`${host}/projects/${id}`, {cache: 'no-store'})
   .then(res => res.json());
 }
 
