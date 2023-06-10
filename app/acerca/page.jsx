@@ -15,7 +15,7 @@ export default function AcercaPage() {
         </div>
         <div className='col-md-6 col-sm-12'>
           <ColeccionImagenes>
-              <IconoAcerca src={'./img/icons/Css3.png'} alt={'css'}/>
+              <IconoAcerca src={'./img/icons/css3.png'} alt={'css'}/>
               <IconoAcerca src={'./img/icons/html5.png'} alt={'html'}/>
               <IconoAcerca src={'./img/icons/javascript.png'} alt={'javascript'}/>
               <IconoAcerca src={'./img/icons/react.gif'} alt={'react'}/>
