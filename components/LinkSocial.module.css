@@ -1,0 +1,13 @@
+.ul {
+  list-style: none;
+  display: flex;
+  padding-left: 0;
+}
+
+.a {
+  color: black; 
+}
+
+.li {
+  margin: 20px 70px 0 0;
+}

@@ -1,0 +1,9 @@
+.col {
+  display: flex;
+  align-items: center;
+}
+
+.carousel .carousel-item img {
+  object-fit: contain;
+  max-height: 100%;
+}

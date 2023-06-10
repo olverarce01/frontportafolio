@@ -1,0 +1,25 @@
+.card {
+  margin: 20px;
+  background-color: white;
+  transition: transform 0.3s;
+
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+.nombre {
+  font-family: 'Lora', serif;
+  font-size: 30px;
+}
+.body {
+  font-family: 'arvo', serif;
+  font-size: 20px;
+}
+.link {
+  text-decoration: none;
+  color: black;
+  margin: auto 20px;
+}
